@@ -44,4 +44,4 @@ shortcuts
 ctrl + ' : hides the terminal
 shift + alt + up or down: copying a selected line
 ctrl + d to select multiple parts with the same words'''
-
+#
