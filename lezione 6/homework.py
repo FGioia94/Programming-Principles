@@ -26,15 +26,15 @@ elif user_item in items:
         print("Articolo rimosso")
     else:
         print("Articolo non rimosso")
-else:
-    if "|" in user_item:
-        user_item = user_item.split("|")
-        items.extend(user_item)
-    else:
-        items.append(user_item)
         
-    print("Articolo aggiunto ✅")
-    items.sort()
+elif "|" in user_item:
+    user_item = user_item.split("|")
+    items.extend(user_item)
+else:
+    items.append(user_item)
+    
+print("Articolo aggiunto ✅")
+items.sort()
 
 print("LISTA MODIFICATA")
 for item in items:
