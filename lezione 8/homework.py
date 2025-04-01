@@ -24,7 +24,7 @@ class Pokemon:
         self.health = random.randint(90, 130)
         self.strength = random.randint(6, 10)
     
-    def attack(self, target):
+    def attacks(self, target):
         multiplier = random.randint(1,4)
         if multiplier == 4:
             print("CRITICAL HIT \n")
@@ -52,7 +52,7 @@ def main():
         time.sleep(2)
         print(f"{attacker.name} is attacking {defender.name}\n")
         time.sleep(2)
-        attacker.attack(defender)
+        attacker.attacks(defender)
         time.sleep(4)
 
     print(f"{defender.name} has 0 HP left, {attacker.name} wins!\n")
